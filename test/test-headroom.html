@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #nav-scroll{
+            background: red;
+            width: 100%;
+            height: 30px;
+        }
+        .animated .slideDown {top: -100px;}
+        .animated .slideUp {top: 0;}
+        .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}  
+        .headroom--unpinned {top: -100px;}  
+        .headroom--pinned {top: 0;}  
+    </style>
+</head>
+<body>
+    <div id="nav-scroll"></div>
+    <script  type="text/javascript"   src="js/jquery-3.2.1.js"></script>
+    <script  type="text/javascript"  src="headroom.js/src/Headroom.js"></script>  
+    <script  type="text/javascript"  src="headroom.js/src/jQuery.headroom.js"></script>  
+    <script>
+        (function() {
+            new Headroom(document.querySelector("#nav-scroll"), { //这里的nav-scroll改为你的导航栏的id或class
+                offset : 50, // 在元素没有固定之前，垂直方向的偏移量（以px为单位）
+                    tolerance: 50, // scroll tolerance in px before state changes        
+                classes: {
+                    initial: "animated",  // 当元素初始化后所设置的class
+                    pinned: "slideUp", // 向上滚动时设置的class
+                    unpinned: "slideDown" // 向下滚动时所设置的class
+                }
+            }).init();    
+        }());
+    </script>
+    <script type="text/javascript">  
+        $(".navbar-fixed-top").headroom();     
+    </script> 
+</body>
+</html>

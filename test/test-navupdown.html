@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>Headroom.js</title>
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <!-- <link href="//cdn.bootcss.com/normalize/2.1.0/normalize.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="demo1.css"> -->
+    <style>
+        .header {
+            background-color: #292f36;
+            height:46px;
+            line-height: 46px;
+            color: #FFFFFF;
+            padding: 0 1.5em;
+            text-align: center;
+        }
+        .header--fixed {
+            position: fixed;
+            z-index: 10;
+            right: 0;
+            left: 0;
+            top: 0
+        }
+        .animated {
+            /* -webkit-animation-duration: .5s;
+            -moz-animation-duration: .5s;
+            -o-animation-duration: .5s; */
+            animation-duration: .5s;
+            /* -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            -o-animation-fill-mode: both; */
+            animation-fill-mode: both
+        }
+        /* @-webkit-keyframes slideDown {
+            0% {
+                -webkit-transform: translateY(-4em)
+            }
+            100% {
+                -webkit-transform: translateY(0)
+            }
+        }
+        @-moz-keyframes slideDown {
+            0% {
+                -moz-transform: translateY(-4em)
+            }
+
+            100% {
+                -moz-transform: translateY(0)
+            }
+        }
+        @-o-keyframes slideDown {
+            0% {
+                -o-transform: translateY(-4em)
+            }
+
+            100% {
+                -o-transform: translateY(0)
+            }
+        } */
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-4em)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+        .animated.slideDown {
+            /* -webkit-animation-name: slideDown;
+            -moz-animation-name: slideDown;
+            -o-animation-name: slideDown; */
+            animation-name: slideDown
+        }
+        /* @-webkit-keyframes slideUp {
+            0% {
+                -webkit-transform: translateY(0)
+            }
+
+            100% {
+                -webkit-transform: translateY(-4em)
+            }
+        }
+        @-moz-keyframes slideUp {
+            0% {
+                -moz-transform: translateY(0)
+            }
+
+            100% {
+                -moz-transform: translateY(-4em)
+            }
+        }
+        @-o-keyframes slideUp {
+            0% {
+                -o-transform: translateY(0)
+            }
+
+            100% {
+                -o-transform: translateY(-4em)
+            }
+        } */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(0)
+            }
+
+            100% {
+                transform: translateY(-4em)
+            }
+        }
+        .animated.slideUp {
+            /* -webkit-animation-name: slideUp;
+            -moz-animation-name: slideUp;
+            -o-animation-name: slideUp; */
+            animation-name: slideUp
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header header--fixed">
+        Headroom.js
+    </header>
+    <!--测试增加页面/start-->
+    <div style="height:1000px;background: #FF0000;color:#FFFFFF;padding-top:46px;text-align: center;font-size: 60px;">红</div>
+    <div style="height:1000px;background: #00FF00;color:#FFFFFF;text-align: center;font-size: 60px;">绿</div>
+    <div style="height:1000px;background: #0000FF;color:#FFFFFF;text-align: center;font-size: 60px;">蓝</div>
+    <!--测试增加页面/end-->
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/headroom/0.7.0/headroom.js"></script>
+    <script src="//cdn.bootcss.com/headroom/0.7.0/jQuery.headroom.js"></script>
+    <script>
+        $(function() {
+            $("#header").headroom({
+                tolerance: 5,
+                offset: 205,
+                classes: {
+                    initial: "animated",
+                    pinned: "slideDown",
+                    unpinned: "slideUp"
+                }
+            });
+        })
+    </script>
+</body>
+</html>

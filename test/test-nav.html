@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>HTML5动画飘窗导航</title>
+  <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        background: url("img/1.jpg") no-repeat;
+        background-size: cover;
+    }
+    nav {
+        width: 25%;
+        height: 45px;
+        margin: 150px auto 0px;
+        border-radius: 5px;
+        background: -webkit-linear-gradient(top, #fff, #999999);
+    }
+    nav > ul {
+        display: -webkit-box;
+    }
+    nav > ul > li {
+        list-style: none;
+        line-height: 45px; height: 45px; overflow: hidden;
+        text-align: center;
+        -webkit-box-flex: 1;
+    }
+    nav > ul > li > a {
+        text-decoration: none;
+        color: #000;
+    }
+    .sun_nav {
+        -webkit-perspective: 800px;
+    }
+    .sun_nav li {
+        list-style: none;
+        border: 1px solid #fff;
+        margin: 2px 0;
+        transform: rotateY(180deg);
+        transition: all .8s;
+        opacity: 0;
+    }
+    
+    .sun_nav li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    nav > ul > li:hover{
+        height: 400px;
+    }
+    nav > ul > li:hover .sun_nav li{
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    nav > ul > li:hover .sun_nav li:nth-child(1) {
+        -webkit-transition-delay: 0ms;
+    }
+    nav > ul > li:hover .sun_nav li:nth-child(2) {
+        -webkit-transition-delay: 50ms;
+    }
+    nav > ul > li:hover .sun_nav li:nth-child(3) {
+        -webkit-transition-delay: 100ms;
+    }
+    nav > ul > li:hover .sun_nav li:nth-child(4) {
+        -webkit-transition-delay: 150ms;
+    }
+</style>
+  </head>
+  <body style="background: #000000;">
+  <nav>
+    <ul>
+      <li id="aa"><a href="">产品展示</a>
+        <ul class="sun_nav">
+          <li><a href="">帮助中心</a></li>
+          <li><a href="">帮助中心</a></li>
+          <li><a href="">帮助中心</a></li>
+          <li><a href="">帮助中心</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+   
+</body>
+</html>

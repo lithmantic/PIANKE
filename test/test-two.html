@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">  
+        .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}  
+        .headroom--unpinned {top: -100px;}  
+        .headroom--pinned {top: 0;}  
+    </style>  
+</head>
+<body>
+    <script  type="text/javascript"   src="js/jquery-3.2.1.js"></script>
+    <script  type="text/javascript"  src="headroom.js/src/Headroom.js"></script>  
+    <script  type="text/javascript"  src="headroom.js/src/jQuery.headroom.js"></script>  
+    <script>
+        {  
+        // 在元素没有固定之前，垂直方向的偏移量（以px为单位）  
+        offset : 0,  
+        // scroll tolerance in px before state changes  
+        tolerance : 0,  
+        // 对于每个状态都可以自定义css classes   
+        classes : {  
+            // 当元素初始化后所设置的class  
+            initial : "headroom",  
+            // 向上滚动时设置的class  
+            pinned : "headroom--pinned",  
+            // 向下滚动时所设置的class  
+            unpinned : "headroom--unpinned"  
+        }  
+    }  
+     
+    </script>
+    <script type="text/javascript">  
+        $(".navbar-fixed-top").headroom();     
+    </script> 
+    
+</body>
+</html>

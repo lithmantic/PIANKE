@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset=" utf-8">  
+    <!-- <meta name="author" content="http://www.softwhy.com/" />   -->
+    <title>文字悬浮效果</title>  
+    <style type="text/css">  
+        #main{  
+            width:640px;  
+            height:640px;  
+            margin:0px auto;  
+            border:1px solid #000;  
+            position:relative;  
+        }  
+        a{text-decoration:none}  
+        #main img{
+            width: 640px;
+            height: 640px;
+        }
+        #main #cite{  
+            width:640px;  
+            position:absolute;  
+            bottom:0px;  
+            left:0px;  
+            text-align:center;  
+            opacity:0.5;  
+            filter:alpha(opacity=50);   
+            background:#333;  
+            /* border-bottom:2px solid #000;  
+            border-top:2px solid #000;  
+            color:white;  
+            overflow:hidden;  
+            display:none;   */
+        }  
+        #main #word{  
+            position:absolute;  
+            height:0px;  
+            width:640px;  
+            text-align:center;  
+            bottom:0px;  
+            left:0px;  
+            color:white;  
+            display:block;  
+            overflow:hidden;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="main">  
+        <a href="#">  
+            <img src="../image/3.jpg">  
+            <!-- 鼠标悬浮上去时出现的阴影 -->
+            <div id="cite"></div>  
+            <hr style="width:20px; height:5px;border:none;color:#fff;" />
+            <div id="word">暗恋这条路，道阻且长</div>  
+        </a>  
+    </div>  
+    <script type="text/javascript">  
+        var speed=3,
+            citeH=0, 
+             flag;  
+        window.onload=function(){  
+            var main=document.getElementById("main"); 
+            var cite=document.getElementById("cite");  
+            var word=document.getElementById("word");  
+  
+            function addHeight(){  
+                clearInterval(flag);  
+                cite.style.display="block";  
+                if(citeH<86){  
+                    citeH=citeH+1;  
+                    cite.style.height=citeH+"px";  
+                    word.style.height=citeH+"px";  
+                }  
+                else{  
+                    clearInterval(flag);  
+                    return;  
+                }  
+                flag=setInterval(addHeight,speed);  
+            }  
+  
+            function reduceHeight(){  
+                clearInterval(flag);  
+                if(citeH>0){  
+                    citeH=citeH-1;  
+                    cite.style.height=citeH+"px";  
+                    word.style.height=citeH+"px";  
+                }  
+                else{  
+                    clearInterval(flag);  
+                    cite.style.display="none";  
+                    return;  
+                }  
+                flag=setInterval(reduceHeight,speed);  
+            }
+            if(main.addEventListener){  
+                main.addEventListener("mouseover",addHeight,false);  
+                main.addEventListener("mouseout",reduceHeight,false);  
+            }  
+            else{  
+                main.attachEvent("onmouseover",addHeight);  
+                main.attachEvent("onmouseout",reduceHeight);  
+            }  
+        }  
+    </script>  
+</body>  
+</html>  
