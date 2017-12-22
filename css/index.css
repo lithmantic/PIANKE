@@ -405,7 +405,7 @@
 .more-content .more-pics .more-pic{
 	width: 230px;
 	height: 265px;
-	border: 1px solid #a3a3a3;
+	/* border: 1px solid #a3a3a3; */
 	background: url(../image/more.png);
 	float: left;
 }
@@ -487,24 +487,24 @@
 .foot .foot-fl{
 	width: 460px;
 	height: 53px;
-	margin-left: 112px;
+	margin-left: 113px;
 }
 .foot .foot-fl img{
-	width: 104px;
-	height: 53px;
-	margin-top: 34px;
+	width: 102px;
+	height: 56px;
+	margin-top: 33px;
 	float: left;
 }
 .foot .foot-fl .foot-text{
 	position: absolute;
-	width: 350px;
-	height: 41px;
+	width: 340px;
+	height: 37px;
 	top: 44px;
 	left: 231px;
-	color: #fff;
+	color: #666;
 }
 .foot .foot-fl .foot-wenzi{
-	width: 350px;
+	width: 340px;
 	height: 15px;
 	float: left;
 }
@@ -514,7 +514,7 @@
 	margin-right: 14px;
 }
 .foot .foot-fl .foot-one a{
-	color: #fff;
+	color: #666;
 }
 .foot .foot-fl .foot-beihao{
 	font-size: 12px;
@@ -522,15 +522,16 @@
 	bottom: 0;
 }
 .foot .foot-fr{
-	width: 318px;
-	height: 46px;
+	width: 317px;
+	height: 47px;
 	float: right;
 	margin-right: 130px;
+	margin-top: -15px;
 	/* background: green; */
 }
 .foot .foot-fr .app img{
-	width: 46px;
-	height: 46px;
+	width: 47px;
+	height: 47px;
 	float: left;
 	margin-right: 19px;
 	opacity: .7;
@@ -541,6 +542,6 @@
 }
 .foot .foot-fr .icon img{
 	width: 89px;
-	height: 46px;
+	height: 36px;
 	float: right;
 }
