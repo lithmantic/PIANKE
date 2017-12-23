@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/client.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>客户端|片刻网-用文字交换世界</title>
+	
+	
+<link href="./客户端_片刻网-用文字交换世界_files/client.css" rel="stylesheet"><link href="./客户端_片刻网-用文字交换世界_files/general.css" rel="stylesheet"></head>
+<body style="">
+    <div id="header" class="header header--fixed animated headroom--top">
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="http://127.0.0.1:5500/client.html"></a>
+            </div>
+            <ul class="navbar">
+                <li class="active"><a href="http://127.0.0.1:5500/client.html">首页</a></li>
+                <li class=""><a href="http://127.0.0.1:5500/client.html">阅读</a></li>
+                <li class=""><a href="http://127.0.0.1:5500/client.html">电台</a></li>
+                <li class=""><a href="http://127.0.0.1:5500/client.html">碎片</a></li>
+                <li class=""><a href="http://127.0.0.1:5500/client.html">客户端</a></li>
+            </ul>
+            <div class="navbar-icon">
+                <div class="editer">
+                    <div>
+                        <img src="./客户端_片刻网-用文字交换世界_files/edit-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="massage-hidden"></div>
+                <div class="userinfo-hidden"></div>
+                <div class="login-btn">
+                    <div>
+                        登陆&nbsp;
+                        <span>/</span>
+                        &nbsp;注册
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-img">
+            
+        </div>
+    </div>
+
+    <!-- 导航栏动画实现引用的js -->
+	<script src="./客户端_片刻网-用文字交换世界_files/jquery.min.js"></script>
+    <script src="./客户端_片刻网-用文字交换世界_files/headroom.js"></script>
+	<script src="./客户端_片刻网-用文字交换世界_files/jQuery.headroom.js"></script>
+	<script src="./客户端_片刻网-用文字交换世界_files/nav.js"></script>
+	<!-- 导航栏引用结束 -->
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if(sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer'))
+			{
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

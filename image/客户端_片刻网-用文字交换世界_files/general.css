@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	display: block;
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: "PingFang SC","微软雅黑";
+	color: #333;
+	/*background: rgb(250,250,250);*/
+	background-image: url(../image/bgImg.png);
+	background-color: #fafafa;
+	background-repeat: repeat-x;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}

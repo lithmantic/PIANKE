@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流实现效果</title>
+    <style>
+        #mian .pin {
+            width: 220px;
+            height: auto;
+            padding: 15px 0px 0px 15px;
+            float: left;
+        }
+
+        #mian .pin .box {
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 6px #ccc;
+            border-radius: 5px;
+        }
+
+        #mian .pin .box img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mian">
+        <!-- 每一个小块 -->
+        <div class="pin">
+            <div class="box">
+                <img src="images/00.jpg" alt="">
+            </div>
+        </div>
+        <!-- 每一个小块 -->
+        <div class="pin">
+            <div class="box">
+                <img src="images/01.jpg" alt="">
+            </div>
+        </div>
+        <!-- 每一个小块 -->
+        <div class="pin">
+            <div class="box">
+                <img src="images/02.jpg" alt="">
+            </div>
+        </div>
+        <!-- 每一个小块 -->
+        <div class="pin">
+            <div class="box">
+                <img src="images/03.jpg" alt="">
+            </div>
+        </div>
+        <!-- 每一个小块 -->
+        <div class="pin">
+            <div class="box">
+                <img src="images/04.jpg" alt="">
+            </div>
+        </div>
+        <!-- 每一个小块 -->
+        <div class="pin">
+            <div class="box">
+                <img src="images/05.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            // 获取父元素
+            var oParent = document.getElementById("main");
+            // 获取父元素下的所有子元素
+            var aPin = getClassObject(oParent, "pin");
+            // 获取每一个块的宽度
+            var iPinw = aPin[0].offsetWidth;
+            // 计算每行放多少个pin（瀑布流块）页面的宽度/每一个瀑布流快的宽度
+            var num = Math.floor(document.documentElement.clientWidth/iPinw);
+            // 重置父级的样式，这样保证图片整体居中
+            oParent.style.cssText = "width: "+ num*iPinW +"px; margin:0 auto;";
+
+            var compareArray = [];
+            // 将一整行的瀑布流块的高度压入一个数组
+            for (var i = 0; i<num; i++){
+                compareArray[i] = aPin[i].offsetHeight;
+            }
+
+            // 获取改行瀑布流高度的最低值
+            var minHeight = Math.min.apply('',compareArray);
+            // 获取该行高度值最小的瀑布流块的索引
+            var minHkey = getMinHeightKey(com)
+        }
+    </script>
+</body>
+
+</html>
