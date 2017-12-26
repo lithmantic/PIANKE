@@ -1,0 +1,58 @@
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+/* #main{
+	min-width: 1100px;
+} */
+.today{
+	height: 386px;
+	width: 769px;
+	/* margin: 10px auto; */
+	/* border-top: 3px solid rgb(239,147,173); */
+	position: relative;
+	background: pink;
+	/* box-shadow: 0 1px 8px rgb(100,100,100); */
+}
+.today_title{
+	width: 130px;
+	height: 36px;
+	line-height: 30px;
+	text-align: center;
+	margin:5px auto;
+	border-top: 2px solid rgb(239,147,173);
+	border-bottom: 2px solid rgb(239,147,173);
+}
+.today_title h4{
+	font-weight: normal;
+	background-color: rgb(240,176,194);
+	margin: 3px 0;
+}
+/* 图片位置 */
+.list_1{
+	top: 30px;
+	left: 50px;
+}
+.list_2{
+	top: 30px;
+	right:50px;
+}
+.list_3{
+	top: 30px;
+	left: 50px;
+}
+.list_4{
+	top: 30px;
+	right:50px;
+}
+.grass_list{
+	height: 550px !important;
+}
+.list_5{
+	top: 290px;
+	left: 50px;
+}
+.list_6{
+	top: 290px;
+	right: 50px;
+}
