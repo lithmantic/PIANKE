@@ -39,11 +39,11 @@ define([],function(){
 			price.style.cssText = 'display:block;width:242px;height:12px;text-align:center;font-size:12px;position:absolute;bottom:0px;';
 			
             // 单个整体的box
-            this.box.style.cssText = 'width:242px;height:354px;position:absolute;top:0;';
+            this.box.style.cssText = 'width:242px;height:399px;position:absolute;top:0;';
             // 图片设置
             this.img.style.cssText = 'width:242px;height:242px;position:absolute;';
             // 文字部分
-			this.infor_box.style.cssText = 'width:242px;height:70px;position:absolute;top:285px;';
+			this.infor_box.style.cssText = 'width:242px;height:70px;position:absolute;top:285px;bottom:45px;';
             // 图片部分
 			this.img.src = this.path;
 			

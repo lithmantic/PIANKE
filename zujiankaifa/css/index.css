@@ -4,10 +4,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .today{
     width: 786px;
-	height: 354px;	
+	height: 399px;	
     position: relative;
     top: 42px;
-    left: 321px;
+	left: 321px;
+	/* background: yellow; */
 }
 /* 图片位置 */
 .list_1{
@@ -19,6 +20,18 @@ h1,h2,h3,h4,h5,h6,p{
 	right:271px;
 }
 .list_3{
+	top: 30px;
+	right: 0px;
+}
+.list_4{
+	top: 30px;
+	left: 0px;
+}
+.list_5{
+	top: 30px;
+	right:271px;
+}
+.list_6{
 	top: 30px;
 	right: 0px;
 }
