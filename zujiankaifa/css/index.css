@@ -1,0 +1,24 @@
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+.today{
+    width: 786px;
+	height: 354px;	
+    position: relative;
+    top: 42px;
+    left: 321px;
+}
+/* 图片位置 */
+.list_1{
+	top: 30px;
+	left: 0px;
+}
+.list_2{
+	top: 30px;
+	right:271px;
+}
+.list_3{
+	top: 30px;
+	right: 0px;
+}
