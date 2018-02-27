@@ -71,7 +71,7 @@
     overflow: hidden;
     margin-left: 147px;
     margin-right: 147px;
-    background: red;
+    /* background: red; */
 }
 .content .slider ul{
 	width: 962px;
@@ -79,7 +79,7 @@
     margin-top: 52px;
 	margin-left: 85px;
 	position: relative;
-	background: green;
+	/* background: green; */
 }
 .content .slider ul li{
 	float: left;

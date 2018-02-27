@@ -154,6 +154,7 @@
 	margin-left: 232px;
 	margin-top: 73px;
 	position: relative;
+	/* background: red; */
 }
 .content .radio img{
 	float: left;
@@ -164,7 +165,7 @@
 	float: left;
 	margin-left: 29px;
 }
-.content .radio .radio-pics{
+/* .content .radio .radio-pics{
 	width: 966px;
 	height: 419px;
 	position: absolute;
@@ -194,7 +195,7 @@
 }
 .content .radio .pic-title{
 	font-size: 24px;
-	/* 超出的文字以省略号显示 */
+	超出的文字以省略号显示
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -220,15 +221,83 @@
 }
 .content .radio .pic+.pic{
 	margin-left: 30px;
+} */
+
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+.today{
+    width: 786px;
+	height: 399px;	
+    position: relative;
+    top: 42px;
+	left: 321px;
+	/* background: yellow; */
+}
+/* 图片位置 */
+.list_1{
+	/* top: 30px; */
+	margin-top:110px;
+	left: 0px;
+}
+.list_2{
+	/* top: 30px; */
+	margin-top:110px;
+	right:371px;
+}
+.list_3{
+	/* top: 30px; */
+	margin-top:110px;
+	right: 0px;
+}
+.list_4{
+	/* top: 30px; */
+	margin-top:110px;
+	left: 0px;
+}
+.list_5{
+	/* top: 30px; */
+	margin-top:110px;
+	right:371px;
+}
+.list_6{
+	/* top: 30px; */
+	margin-top:110px;
+	right: 0px;
+}
+.list_7{
+	/* top: 30px; */
+	margin-top:110px;
+	left: 0px;
+}
+.list_8{
+	/* top: 30px; */
+	margin-top:110px;
+	right:371px;
+}
+.list_9{
+	/* top: 30px; */
+	margin-top:110px;
+	right: 0px;
+}
+.list_10{
+	/* top: 30px; */
+	margin-top:110px;
+	left: 0px;
+}
+.list_11{
+	/* top: 30px; */
+	margin-top:110px;
+	right:371px;
+}
+.list_12{
+	/* top: 30px; */
+	margin-top:110px;
+	right: 0px;
 }
 
 
-.content .voice{
-    width: 966px;
-    height: 482px;
-	margin-left: 232px;
-	margin-top: 73px;
-    background:red;
+.foot{
+	top: 160px;
 }
-
-
