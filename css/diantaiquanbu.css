@@ -1,0 +1,37 @@
+.content .quanbu{
+    width: 966px;
+    height: 95px;
+    margin-top: 89px;
+    margin-left: 232px;
+    background: red;
+}
+.content .quanbu .jing{
+	width: 65px;
+	height: 32px;
+	/* background: red;	 */
+	float: left;
+	margin-top: 40px;
+}
+.content .quanbu .all{
+	width: 65px;
+	height: 32px;
+	/* background: red;	 */
+	float: left;
+	margin-top: 40px;
+	margin-left: 25px;
+}
+.content  .quanbu .fenlei{
+    float: left;
+    width: 600px;
+    height: 95px;
+    margin-top: 40px;
+    left: 0px;
+}
+.content .quanbu .hui{
+	width: 65px;
+	height: 32px;
+	float: left;
+	/* margin-top: 40px; */
+    margin-left: 0px;
+    color: #666;
+}
