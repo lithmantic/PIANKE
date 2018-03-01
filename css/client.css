@@ -1,66 +1,3 @@
-.navbar li{
-	width: 84px;
-	height: 90px;
-	line-height: 90px;
-	color: black;
-	text-align: center;
-	float: left;
-	font-size: 16px;
-}
-.navbar li a{
-	padding: 18px;
-	color: #333;
-}
-.header .navbar-icon{
-	/* display: inline-block; */
-	width: 200px;
-	height: 90px;
-	float: right;
-}
-.header .editer{
-	width: 44px;
-	height: 44px;
-	/*margin-right: 25px;*/
-	margin-top: 25px;	
-	border: 1px solid #57ad68;
-	border-radius: 50%;	
-	vertical-align: middle;  /*水平居中*/
-	cursor: pointer; /*鼠标光标的变化*/
-	box-sizing: border-box;
-}
-.header .editer div{
-	position: absolute;
-	width: 38px;
-	height: 38px;
-	margin-top: 1.5px;
-	margin-left: 2px;
-	background: rgba(101,181,117,0.9);
-	border-radius: 50%;
-}
-.header .editer img{
-	width: 19px;
-	height: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-left: -9.5px;
-	margin-top: -10px;
-}
-.header .login-btn{
-	width: 126px;
-	height: 44px;
-	margin-top: -44px;
-	margin-left: 68px;
-	line-height: 44px;
-	text-align: center;
-	font-size: 14px;
-	font-weight: 200;
-	border: 1px solid rgba(120,188,133,0.5);
-	box-sizing: border-box;
-	border-radius: 25px;
-	color: #57ad68;
-	cursor: pointer;
-}
 .content{
     margin-top: 91px;
 }
@@ -154,10 +91,18 @@
     margin-left: 154px;
     background: url(../image/clitent-title-bg.png) no-repeat;
     background-size: 87px;
-    /* background: red; */
 }
 .content .content-wb .client-text .num{
+    position: absolute;
     
+    top: 40px;
+    font-size: 40px;
+}
+.content .content-wb .client-text .title{
+    position: absolute;
+    right: 180px;
+    top: 90px;
+    /* font-size: 40px; */
 }
 .content .content-wb .client-one{
     position: absolute;
@@ -168,47 +113,126 @@
     height: 523px;
     margin-bottom: 0;
 }
-
-
-
 .content .content-zhibo{
     width: 666px;
     height: 465px;
     margin-left: 383px;
     margin-top: 120px;
-    background: red;;
+    /* background: red; */
 }
-
-
+.content .content-zhibo .client-tet{
+    width: 310px;
+    height: 132px;
+    margin-left: 354px;
+    position: relative;
+    top: 150px;
+    background: url(../image/clitent-title-bg.png) no-repeat;
+    background-size: 87px;
+}
+.content .content-zhibo .client-tet .num{
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    font-size: 40px;
+}
+.content .content-zhibo .client-tet .title{
+    position: absolute;
+    right: 20px;
+    top: 90px;
+}
+.content .content-zhibo .client-two{
+    position: absolute;
+    bottom: 0;
+}
+.content .content-zhibo .client-two img{
+    position: absolute;
+    top:660px;
+    width: 290px;
+    height: 463px;
+    margin-bottom: 0;
+}
 .content .content-shequ{
     width: 666px;
     height: 465px;
     margin-left: 383px;
     margin-top: 120px;
-    background: green;
 }
-
-
+.content .content-shequ .client-tt{
+    width: 310px;
+    height: 132px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+    background: url(../image/clitent-title-bg.png) no-repeat;
+    background-size: 87px;
+}
+.content .content-shequ .client-tt .num{
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    font-size: 30px;
+}
+.content .content-shequ .client-tt .title{
+    position: absolute;
+    left: 20px;
+    top: 90px;
+}
+.content .content-shequ .client-three{
+    position: absolute;
+    bottom: 0;
+}
+.content .content-shequ .client-three img{
+    position: relative;
+    top:1710px;
+    left: 370px;
+    width: 290px;
+    height: 463px;
+}
 .content .content-shuo{
     width: 666px;
     height: 465px;
     margin-left: 383px;
     margin-top: 120px;
-    background: purple;
+    /* background: purple; */
 }
-
-
+.content .content-shuo .client-txt{
+    width: 310px;
+    height: 132px;
+    margin-left: 354px;
+    position: relative;
+    top: 150px;
+    background: url(../image/clitent-title-bg.png) no-repeat;
+    background-size: 87px;
+}
+.content .content-shuo .client-txt .num{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-size: 20px;
+}
+.content .content-shuo .client-txt .title{
+    position: absolute;
+    right: 20px;
+    top: 90px;
+}
+.content .content-shuo .client-four{
+    position: absolute;
+    bottom: 0;
+}
+.content .content-shuo .client-four img{
+    position: absolute;
+    top:1830px;
+    width: 290px;
+    height: 463px;
+    margin-bottom: 0;
+}
 .content .content-last{
     width: 325px;
     height: 150px;
     margin-left: 551px;
     margin-top: 218px;
-    background: palevioletred;;
+    font-size: 14px;
 }
-
-
-
-
 .foot{
     top:86px;
 }

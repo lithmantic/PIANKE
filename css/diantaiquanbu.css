@@ -3,7 +3,7 @@
     height: 95px;
     margin-top: 89px;
     margin-left: 232px;
-    background: red;
+    /* background: red; */
 }
 .content .quanbu .jing{
 	width: 65px;
@@ -15,17 +15,16 @@
 .content .quanbu .all{
 	width: 65px;
 	height: 32px;
-	/* background: red;	 */
 	float: left;
 	margin-top: 40px;
 	margin-left: 25px;
 }
 .content  .quanbu .fenlei{
     float: left;
-    width: 600px;
+    width: 400px;
     height: 95px;
     margin-top: 40px;
-    left: 0px;
+    margin-right: 400px;
 }
 .content .quanbu .hui{
 	width: 65px;
@@ -34,4 +33,98 @@
 	/* margin-top: 40px; */
     margin-left: 0px;
     color: #666;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+.today{
+    width: 786px;
+	height: 399px;	
+    position: relative;
+    top: 42px;
+	left: 321px;
+	/* background: yellow; */
+}
+/* 图片位置 */
+.ls1{
+	top: 30px;
+	left: 0px;
+}
+.ls2{
+	top: 30px;
+	left: 0px;
+}
+.ls3{
+	top: 30px;
+	left: 0px;
+}
+.ls4{
+	top: 30px;
+	left: 0px;
+}
+.ls5{
+	top: 30px;
+	left: 0px;
+}
+.ls6{
+	top: 30px;
+	left: 0px;
+}
+.ls7{
+	top: 30px;
+	left: 0px;
+}
+.ls8{
+	top: 30px;
+	left: 0px;
+}
+.ls9{
+	top: 30px;
+	left: 0px;
+}
+.ls10{
+	top: 30px;
+	left: 0px;
+}
+.ls11{
+	top: 30px;
+	left: 0px;
+}
+.ls12{
+	top: 30px;
+	left: 0px;
+}
+.ls13{
+	top: 30px;
+	left: 0px;
+}
+.ls14{
+	top: 30px;
+	left: 0px;
+}
+.ls15{
+	top: 30px;
+	left: 0px;
+}
+.ls16{
+	top: 30px;
+	left: 0px;
+}
+.ls17{
+	top: 30px;
+	left: 0px;
+}
+.ls18{
+	top: 30px;
+	left: 0px;
+}
+.ls19{
+	top: 30px;
+	left: 0px;
+}
+.ls20{
+	top: 30px;
+	left: 0px;
 }
