@@ -1,0 +1,34 @@
+#waterfall a{ 
+    color:#000; 
+}
+#waterfall a:hover{ 
+    text-decoration:none; 
+    color:#57ad68;
+}
+#waterfall{ 
+    text-align:center; 
+    width:1000px; 
+    margin:0 auto;
+    font:12px/1.5 Arial;
+}
+#waterfall div{
+    overflow: hidden;
+}
+#waterfall img{ 
+    width:223px;
+    border:0 none;
+    transition: all 0.8s;
+}
+#waterfall img:hover{
+	transform: scale(1.1);
+}
+#waterfall .cell{ 
+    width:223px;
+    border:1px solid #E3E3E3; 
+    background:#fff; 
+    margin-top:20px;
+}
+#waterfall p{
+    margin: 13px;
+    padding: 3px;
+}
