@@ -156,8 +156,8 @@ var opt = {
                 k += '0';
             }
             k += i;
-            // var src = "http://cued.xunlei.com/demos/publ/img/P_" + k + ".jpg";
-            var src = "#_" + k + ".jpg";
+            var src = "http://cued.xunlei.com/demos/publ/img/P_" + k + ".jpg";
+            // var src = "#_" + k + ".jpg";
             html += '<div class="cell"><a href="#"><img src="' + src + '" /></a><p>' + k + '</p></div>';
         }
         return $(html);

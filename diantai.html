@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>电台|片刻网-用文字交换世界</title>
+    <link rel="icon" href="image/x-icon.ico">
     <link href="css/general.css" rel="stylesheet" href="text/css">
 	<link href="css/head.css" rel="stylesheet" href="text/css">
     <link href="css/diantai.css" rel="stylesheet" href="text/css">
+    <link href="css/lunbo.css" rel="stylesheet" href="text/css">
 	<link href="css/foot.css" rel="stylesheet" href="text/css">
 </head>
 <body>
@@ -50,10 +52,26 @@
                 <!-- <hr style=" height:2px;border:none;border-top:2px dotted #185598;" /> -->
             </a>
             <a href="">
-                <div class="all">全部电台</div>
+                <div class="alldt">全部电台</div>
             </a>
         </div>
-        <div class="slider"></div>
+        
+        <!-- 轮播部分 -->
+        <div class="all" id='all'>  
+            <div class="screen" id="screen">  
+                <ul id="ul">  
+                    <li><img src="image/37.jpg" alt=""></li>  
+                    <li><img src="image/38.jpg" alt=""></li>  
+                    <li><img src="image/39.jpg" alt=""></li>  
+                    <li><img src="image/40.jpg" alt=""></li>  
+                    <li><img src="image/41.jpg" alt=""></li>  
+                </ul>  
+                <ol></ol>  
+                <div id="arr"><span id="left"><</span><span id="right">></span></div>  
+            </div>  
+        </div>  
+        <!-- 轮播结束 -->
+
         <div class="fenlei">
             <!-- <hr style=" height:2px;border:none;border-top:2px dotted #333;" /> -->
             <div class="fenlei-cpt">
@@ -403,5 +421,8 @@
     <!-- 组件化开发引用的js -->
     <script type="text/javascript" src='js/require.js' data-main='js/diantai'></script>
     <!-- 引用结束 -->
+    <!-- 轮播引用js -->
+    <script type="text/javascript" src='js/lunbo.js' data-main='js/diantai'></script>
+    <!-- 轮播引用结束 -->
 </body>
 </html>

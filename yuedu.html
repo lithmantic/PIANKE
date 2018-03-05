@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<title>阅读|片刻网-用文字交换世界</title>
+    <title>阅读|片刻网-用文字交换世界</title>
+    <link rel="icon" href="image/x-icon.ico">
     <link href="css/general.css" rel="stylesheet" href="text/css">
 	<link href="css/head.css" rel="stylesheet" href="text/css">
-	<link href="css/yuedu.css" rel="stylesheet" href="text/css">
+    <link href="css/yuedu.css" rel="stylesheet" href="text/css">
+    <link href="css/lunbo.css" rel="stylesheet" href="text/css">
 	<link href="css/foot.css" rel="stylesheet" href="text/css">
 </head>
 <body>
@@ -44,19 +46,24 @@
 
     <!-- 内容 -->
     <div class="content">
-        <div class="slider">
-            <ul class="slider-boxs">
-                <li class="slider-one"><a href=""><img src="image/14.jpg" alt=""></a></li>
-                <li class="slider-two"><a href=""><img src="image/15.jpg" alt=""></a></li>
-                <li class="slider-three"><a href=""><img src="image/16.jpg" alt=""></a></li>
-                <li class="slider-four"><a href=""><img src="image/17.jpg" alt=""></a></li>
-                <li class="slider-five"><a href=""><img src="image/18.jpg" alt=""></a></li>
-                <li class="slider-six"><a href=""><img src="image/19.jpg" alt=""></a></li>
-            </ul>
-            <div class="fl"></div>
-            <div class="fr"></div> 
-            <div class="unline"></div>  
-        </div> 
+        
+        <!-- 轮播部分 -->
+        <div class="all" id='all'>  
+            <div class="screen" id="screen">  
+                <ul id="ul">  
+                    <li><img src="image/34.jpg" alt=""></li>  
+                    <li><img src="image/35.jpg" alt=""></li>  
+                    <li><img src="image/36.jpg" alt=""></li>  
+                    <li><img src="image/4.jpg" alt=""></li>  
+                    <li><img src="image/5.jpg" alt=""></li>  
+                </ul>  
+                <ol></ol>  
+                <div id="arr"><span id="left"><</span><span id="right">></span></div>  
+            </div>  
+        </div>  
+        <!-- 轮播结束 -->
+
+
         <div class="content-user">
             <div class="fenlei">
                 <img src="image/square.png" alt="">
@@ -263,6 +270,7 @@
     <script src="//cdn.bootcss.com/headroom/0.7.0/headroom.js"></script>
 	<script src="//cdn.bootcss.com/headroom/0.7.0/jQuery.headroom.js"></script>
 	<script src="js/nav.js"></script>
-	<!-- 导航栏引用结束 -->
+    <!-- 导航栏引用结束 -->
+    <script type="text/javascript" src='js/lunbo.js' data-main='js/diantai'></script>
 </body>
 </html>

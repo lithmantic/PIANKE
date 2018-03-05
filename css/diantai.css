@@ -11,7 +11,7 @@
 	float: left;
 	margin-top: 40px;
 }
-.content .jingxuan .all{
+.content .jingxuan .alldt{
 	width: 65px;
 	height: 32px;
 	/* background: red;	 */
@@ -19,16 +19,10 @@
 	margin-top: 40px;
 	margin-left: 25px;
 }
-.content .slider{
-    width: 1132px;
-    height: 403px;
-    margin-left: 149px;
-    /* background: red; */
-}
 .content .fenlei{
     width: 966px;
     height: 142px;
-    margin-top: 81px;
+    margin-top: 40px;
 	margin-left: 232px;
 	border: 1px dashed #333;
 	border-left: none;
