@@ -10,6 +10,40 @@
 	<link href="css/suipian.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <!-- 头部 -->
+    <div id="header"  class="header header--fixed">
+        <div class="header-top">
+            <div class="header-logo">
+                <a href></a>
+            </div>
+            <ul class="navbar">
+                <li class><a onClick="window.location.href='index.html'" href="#">首页</a></li>
+                <li class><a onClick="window.location.href='yuedu.html'" href="#">阅读</a></li>
+                <li class><a onClick="window.location.href='diantai.html'" href="#">电台</a></li>
+                <li class="active"><a href="#">碎片</a></li>
+                <li class><a onClick="window.location.href='client.html'" href="#">客户端</a></li>
+            </ul>
+            <div class="navbar-icon">
+                <div class="editer">
+                    <div>
+                        <img src="image/edit-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="massage-hidden"></div>
+                <div class="userinfo-hidden"></div>
+                <div class="login-btn">
+                    <div>
+                        登陆&nbsp;
+                        <span>/</span>
+                        &nbsp;注册
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <!-- 碎片部分 -->
 	<div id="waterfall">
         <div class="cell">
             <a href="#">
@@ -204,7 +238,11 @@
             </p>
         </div>
     </div>
+    <!-- 碎片部分结束 -->
+
+    <!-- 瀑布流引用js -->
     <script src="js/jquery.min.js"></script>
     <script src="js/suipian.js"></script>
+    <!-- 瀑布流引用结束 -->
 </body>
 </html>
