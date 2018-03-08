@@ -1,0 +1,46 @@
+.content{
+    width: 750px;
+	height: 4200px;
+	margin: 0 auto;
+    padding-left: 192px;
+    border: solid 1px gainsboro
+    /* background: yellow; */
+}
+.content .neirong{
+    width: 550px;
+	height: 4000px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-right: 200px;
+    /* border: solid 1px red; */
+    /* background: pink; */
+}
+.content .neirong .ziyou{
+    width: 65px;
+    height: 20px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+.content .neirong .title{
+    font-size: 30px;
+    padding-top: 12px;
+}
+.content .neirong .wenzi{
+    font-family: "PingFang SC","微软雅黑";
+    color:#333;
+    margin-top: 80px;
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+p{
+    display: block;
+    -webkit-margin-before:1em;
+    -webkit-margin-after:1em;
+    -webkit-margin-start:1em;
+    -webkit-margin-end:1em;
+}
+
+.foot{
+	top: 160px;
+}
