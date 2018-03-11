@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <title>片刻网-用文字交换世界</title>
     <link rel="icon" href="../image/x-icon.ico">
+    <style type="text/css">  
+        body{
+            margin: 0;
+            padding: 0;
+            background:  url(../image/suipian.jpg);
+        }
+        .content{
+            width: 200px;
+            margin: 260px auto;
+        } 
+    </style>
 </head>
 <body>
-    <div>
-        <label for="user">用户名</label><input type="text" id="user">
+    <div class="content">
+        <div class="user">
+            <label for="user">用户名</label><input type="text" id="user">
+        </div>
+        <div>
+            <label for="password">密&nbsp;&nbsp;&nbsp;码</label><input type="password" id="password">
+        </div>
+        <div>
+            <button id="register">注册</button>
+            <button id="login">
+                <a href="login.html">已有账号，去登录</a>
+            </button>
+        </div>
     </div>
-    <div>
-        <label for="password">密&nbsp;&nbsp;&nbsp;码</label><input type="password" id="password">
-    </div>
-    <div>
-        <button id="register">注册</button>
-        <button id="login">
-            <a href="login.html">已有账号，去登录</a>
-        </button>
-    </div>
+    
 </body>
 <script src="js/jquery.min.js"></script>
 <script>
