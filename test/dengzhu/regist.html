@@ -22,7 +22,7 @@
             <label for="user">用户名</label><input type="text" id="user">
         </div>
         <div>
-            <label for="password">密&nbsp;&nbsp;&nbsp;码</label><input type="password" id="password">
+            <label for="pwd">密&nbsp;&nbsp;&nbsp;码</label><input type="pwd" id="password">
         </div>
         <div>
             <button id="register">注册</button>
@@ -42,7 +42,7 @@
                type:"POST",
                data:{
                     username:$("#user").val(),
-                    password:$("#password").val()
+                    password:$("#pwd").val()
                },
                success:function (res) {
                    alert(res);
@@ -53,5 +53,6 @@
            })
        })
     });
+    //fetch请求与数据库链接
 </script>
 </html>
